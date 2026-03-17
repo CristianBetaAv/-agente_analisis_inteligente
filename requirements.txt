@@ -15,6 +15,7 @@ azure-identity>=1.15.0
 
 # Data validation
 pydantic>=2.5.0
+pydantic-core>=2.14.0
 
 # PDF Generation
 reportlab>=4.0.0
