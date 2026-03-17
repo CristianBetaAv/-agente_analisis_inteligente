@@ -30,8 +30,6 @@ import logging
 from datetime import datetime, date
 import azure.functions as func
 import base64
-from PyPDF2 import PdfReader
-from docx import Document
 from io import BytesIO
 
 # Agregar shared al path
@@ -53,12 +51,17 @@ class DateTimeEncoder(json.JSONEncoder):
 def extract_text_from_pdf(pdf_bytes: bytes) -> str:
     """Extrae texto de un archivo PDF"""
     try:
+        from PyPDF2 import PdfReader
+        
         pdf_file = BytesIO(pdf_bytes)
         reader = PdfReader(pdf_file)
         text = ""
         for page in reader.pages:
             text += page.extract_text() + "\n"
         return text.strip()
+    except ImportError:
+        logging.error("❌ PyPDF2 no está instalado. Instala con: pip install PyPDF2")
+        raise
     except Exception as e:
         logging.error(f"Error extrayendo texto de PDF: {str(e)}")
         return ""
@@ -67,12 +70,17 @@ def extract_text_from_pdf(pdf_bytes: bytes) -> str:
 def extract_text_from_word(docx_bytes: bytes) -> str:
     """Extrae texto de un archivo Word (DOCX)"""
     try:
+        from docx import Document
+        
         doc_file = BytesIO(docx_bytes)
         doc = Document(doc_file)
         text = ""
         for para in doc.paragraphs:
             text += para.text + "\n"
         return text.strip()
+    except ImportError:
+        logging.error("❌ python-docx no está instalado. Instala con: pip install python-docx")
+        raise
     except Exception as e:
         logging.error(f"Error extrayendo texto de Word: {str(e)}")
         return ""
@@ -268,6 +276,20 @@ async def main(req: func.HttpRequest) -> func.HttpResponse:
                 opportunity_data["document_text"] = document_text
                 opportunity_data["previous_analysis"] = previous_analysis
                 
+            except ImportError as ie:
+                logging.error(f"❌ Error de dependencia: {str(ie)}")
+                return func.HttpResponse(
+                    json.dumps({
+                        "success": False,
+                        "error": {
+                            "code": "MISSING_DEPENDENCY",
+                            "message": f"Falta una librería requerida: {str(ie)}. Asegúrate de que requirements.txt contiene PyPDF2>=3.0.1 y python-docx>=1.1.0 y que se han instalado correctamente.",
+                            "details": "Verifica en la consola de Azure Functions que las dependencias se hayan instalado correctamente."
+                        }
+                    }),
+                    status_code=500,
+                    mimetype="application/json"
+                )
             except Exception as e:
                 logging.error(f"❌ Error procesando documento: {str(e)}")
                 return func.HttpResponse(
