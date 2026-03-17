@@ -8,13 +8,14 @@ import logging
 from datetime import datetime
 from typing import Dict, Any, Optional
 
-from ..models.opportunity import OpportunityPayload
-from ..services.openai_service import OpenAIService
-from ..services.search_service import SearchService
-from ..services.blob_storage_service import BlobStorageService
-from ..services.cosmos_service import CosmosDBService
-from ..generators.adaptive_card import generate_opportunity_card
-from ..generators.pdf_generator import PDFGenerator
+# Imports perezosos para evitar errores de carga
+# from ..models.opportunity import OpportunityPayload
+# from ..services.openai_service import OpenAIService
+# from ..services.search_service import SearchService
+# from ..services.blob_storage_service import BlobStorageService
+# from ..services.cosmos_service import CosmosDBService
+# from ..generators.adaptive_card import generate_opportunity_card
+# from ..generators.pdf_generator import PDFGenerator
 
 
 class OpportunityOrchestrator:
@@ -34,20 +35,29 @@ class OpportunityOrchestrator:
     
     def __init__(self):
         """Inicializa los servicios necesarios"""
-        self.openai_service = OpenAIService()
-        self.search_service = SearchService()
-        self.blob_service = BlobStorageService()
-        
-        # Cosmos DB es opcional
         try:
-            self.cosmos_service = CosmosDBService()
-            self.cosmos_enabled = True
-        except Exception as e:
-            logging.warning(f"⚠️ Cosmos DB no configurado: {str(e)}")
-            self.cosmos_service = None
-            self.cosmos_enabled = False
-        
-        logging.info("✅ OpportunityOrchestrator inicializado")
+            from ..services.openai_service import OpenAIService
+            from ..services.search_service import SearchService
+            from ..services.blob_storage_service import BlobStorageService
+            from ..services.cosmos_service import CosmosDBService
+            
+            self.openai_service = OpenAIService()
+            self.search_service = SearchService()
+            self.blob_service = BlobStorageService()
+            
+            # Cosmos DB es opcional
+            try:
+                self.cosmos_service = CosmosDBService()
+                self.cosmos_enabled = True
+            except Exception as e:
+                logging.warning(f"⚠️ Cosmos DB no configurado: {str(e)}")
+                self.cosmos_service = None
+                self.cosmos_enabled = False
+            
+            logging.info("✅ OpportunityOrchestrator inicializado")
+        except ImportError as ie:
+            logging.error(f"❌ Error importando servicios: {str(ie)}")
+            raise
     
     async def process_opportunity(self, payload: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -68,7 +78,17 @@ class OpportunityOrchestrator:
             logging.info("📥 Paso 1: Validando payload...")
             
             try:
+                from ..models.opportunity import OpportunityPayload
+                
                 opportunity = OpportunityPayload(**payload)
+            except ImportError as ie:
+                logging.error(f"❌ Error importando pydantic/OpportunityPayload: {str(ie)}")
+                return self._error_response(
+                    "DEPENDENCY_ERROR",
+                    f"Falta la librería pydantic. Instala con: pip install pydantic>=2.5.0",
+                    payload.get("opportunityid", "unknown"),
+                    payload.get("name", "Unknown")
+                )
             except Exception as e:
                 logging.error(f"❌ Error validando payload: {str(e)}")
                 return self._error_response(
@@ -195,6 +215,8 @@ class OpportunityOrchestrator:
             
             pdf_url = None
             try:
+                from ..generators.pdf_generator import PDFGenerator
+                
                 pdf_generator = PDFGenerator()
                 pdf_bytes = pdf_generator.generate(
                     title=f"Análisis: {opportunity.name}",
@@ -211,6 +233,8 @@ class OpportunityOrchestrator:
                 pdf_url = self.blob_service.upload_pdf(pdf_bytes, blob_name)
                 logging.info(f"✅ PDF subido: {blob_name}")
                 
+            except ImportError as ie:
+                logging.warning(f"⚠️ PDFGenerator no disponible: {str(ie)}")
             except Exception as e:
                 logging.warning(f"⚠️ Error generando PDF: {str(e)}")
             
@@ -219,14 +243,23 @@ class OpportunityOrchestrator:
             # ========================================
             logging.info("🎨 Paso 8: Generando Adaptive Card...")
             
-            adaptive_card = generate_opportunity_card(
-                opportunity_id=opportunity.opportunityid,
-                opportunity_name=opportunity.name,
-                analysis_data=analysis_result,
-                pdf_url=pdf_url
-            )
-            
-            logging.info("✅ Adaptive Card generado")
+            try:
+                from ..generators.adaptive_card import generate_opportunity_card
+                
+                adaptive_card = generate_opportunity_card(
+                    opportunity_id=opportunity.opportunityid,
+                    opportunity_name=opportunity.name,
+                    analysis_data=analysis_result,
+                    pdf_url=pdf_url
+                )
+                
+                logging.info("✅ Adaptive Card generado")
+            except ImportError as ie:
+                logging.warning(f"⚠️ Adaptive Card no disponible: {str(ie)}")
+                adaptive_card = None
+            except Exception as e:
+                logging.warning(f"⚠️ Error generando Adaptive Card: {str(e)}")
+                adaptive_card = None
             
             # ========================================
             # PASO 9: Extraer líderes de torre únicos
