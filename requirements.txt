@@ -1,0 +1,28 @@
+# Agente de Análisis Inteligente - Azure Functions
+# Python 3.12
+
+# Azure Functions
+azure-functions>=1.17.0
+
+# OpenAI / Azure OpenAI
+openai>=1.12.0
+
+# Azure Services
+azure-search-documents>=11.4.0
+azure-storage-blob>=12.19.0
+azure-cosmos>=4.5.1
+azure-identity>=1.15.0
+
+# Data validation
+pydantic>=2.5.0
+
+# PDF Generation
+reportlab>=4.0.0
+
+# Document processing
+PyPDF2>=3.0.1
+python-docx>=1.1.0
+
+# Utilities
+python-dateutil>=2.8.2
+requests>=2.31.0

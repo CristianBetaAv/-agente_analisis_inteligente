@@ -1,0 +1,27 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    
+    "AZURE_OPENAI_ENDPOINT": "https://your-openai-resource-dev.openai.azure.com/",
+    "AZURE_OPENAI_KEY": "your-openai-api-key-here",
+    "AZURE_OPENAI_DEPLOYMENT_NAME": "gpt-4o-mini",
+    "AZURE_OPENAI_API_VERSION": "2024-10-21",
+    
+    "AZURE_SEARCH_ENDPOINT": "https://your-search-service-dev.search.windows.net",
+    "AZURE_SEARCH_KEY": "your-search-api-key-here",
+    "AZURE_SEARCH_INDEX_TEAMS": "torres-index",
+    
+    "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=your-storage-dev;AccountKey=your-key-here;EndpointSuffix=core.windows.net",
+    "AZURE_STORAGE_CONTAINER_NAME": "analysis-pdfs",
+    
+    "COSMOS_ENDPOINT": "https://your-cosmos-account-dev.documents.azure.com:443/",
+    "COSMOS_KEY": "your-cosmos-key-here",
+    "COSMOS_DATABASE_NAME": "opportunity-analysis",
+    "COSMOS_CONTAINER_NAME": "analysis-records",
+    
+    "KEY_VAULT_URL": "https://your-keyvault-dev.vault.azure.net/"
+  }
+}
+

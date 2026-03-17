@@ -1,0 +1,11 @@
+﻿{
+  "opportunityid": "test-001-local",
+  "name": "Prueba Local - Sistema de IA para Análisis de Documentos",
+  "description": "Proyecto de prueba para validar el funcionamiento local del agente",
+  "cr807_descripciondelrequerimientofuncional": "El cliente necesita un sistema de inteligencia artificial que permita:\n1. Análisis automático de documentos PDF\n2. Extracción de información clave\n3. Clasificación automática de documentos\n4. Generación de resúmenes ejecutivos\n5. Integración con su sistema de gestión documental actual",
+  "estimatedclosedate": "2026-06-30",
+  "estimatedvalue": 85000,
+  "statecode": 0,
+  "SdkMessage": "Create",
+  "_customerid_value": "Cliente Demo S.A."
+}

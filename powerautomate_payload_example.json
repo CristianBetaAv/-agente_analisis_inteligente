@@ -1,0 +1,5 @@
+{
+    "body": "@{triggerBody()}",
+    "teams_id": "@{variables('Var_TeamsID')}",
+    "channel_id": "@{variables('VarChannelId')}"
+}

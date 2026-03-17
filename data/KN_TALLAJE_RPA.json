@@ -1,0 +1,254 @@
+[
+  {
+    "tower": "RPA",
+    "integration_type": "RPA básico",
+    "size": "Small",
+    "description": "Small",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 3.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 4.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 2.0
+      }
+    ],
+    "total_hours": 9.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA básico",
+    "size": "Medium",
+    "description": "Medium",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 5.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 6.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 14.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA básico",
+    "size": "Large",
+    "description": "Large",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 7.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 8.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 19.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA básico",
+    "size": "X-Large",
+    "description": "X-Large",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 9.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 10.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 25.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA intermedio",
+    "size": "Small",
+    "description": "Automatización con conexión a un sistema.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 3.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 4.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 10.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA intermedio",
+    "size": "Medium",
+    "description": "Proceso automatizado con varios sistemas y validaciones básicas.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 5.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 6.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 15.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA intermedio",
+    "size": "Large",
+    "description": "Flujo automatizado con manejo de excepciones y logs personalizados.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 7.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 8.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 21.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA intermedio",
+    "size": "X-Large",
+    "description": "Automatización compleja con integración de múltiples sistemas y monitoreo.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 9.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 10.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 27.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA avanzado",
+    "size": "Small",
+    "description": "Automatización avanzada con inteligencia OCR.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 4.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 6.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 14.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA avanzado",
+    "size": "Medium",
+    "description": "Integración de IA para clasificación de documentos y decisiones automáticas.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 6.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 8.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 20.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA avanzado",
+    "size": "Large",
+    "description": "Automatización inteligente con Machine Learning y validaciones contextuales.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 8.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 12.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 28.0
+  },
+  {
+    "tower": "RPA",
+    "integration_type": "RPA avanzado",
+    "size": "X-Large",
+    "description": "Orquestación avanzada con RPA cognitivo y optimización predictiva de procesos.",
+    "criteria": [
+      {
+        "name": "Diseño del proceso y análisis funcional",
+        "hours": 12.0
+      },
+      {
+        "name": "Desarrollo y configuración",
+        "hours": 16.0
+      },
+      {
+        "name": "Pruebas y validación",
+        "hours": 12.0
+      }
+    ],
+    "total_hours": 40.0
+  }
+]

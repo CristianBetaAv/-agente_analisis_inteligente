@@ -1,0 +1,587 @@
+[
+  {
+    "id": "1",
+    "team_name": "IA",
+    "tower": "Torre IA",
+    "skills": [
+      "Diseño y entrenamiento de modelos",
+      "Procesamiento de lenguaje natural",
+      "NLP",
+      "Visión por computador",
+      "Análisis predictivo",
+      "Agentes y chatbots inteligentes",
+      "Integración con APIs de IA",
+      "Servicios de IA",
+      "Automatización"
+    ],
+    "team_lead": "Angie T. Pena",
+    "team_lead_email": "angiepena@cbit-online.com",
+    "expertise_areas": [
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision",
+      "IA Generativa",
+      "RAG"
+    ],
+    "technologies": [
+      "LLM",
+      "ML",
+      "DL",
+      "NLP",
+      "IA generativa",
+      "RAG",
+      "Amazon Bedrock",
+      "Amazon SageMaker",
+      "Amazon Rekognition",
+      "Amazon Lex",
+      "Amazon Textract",
+      "AWS Lambda",
+      "Amazon Comprehend",
+      "Azure AI Studio",
+      "GitHub Copilot",
+      "Copilot Studio",
+      "Azure Cognitive Services",
+      "Power Automate"
+    ],
+    "frameworks": [
+      "Langchain",
+      "agno",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "Plotly",
+      "Scikit-Learn",
+      "XGBoost",
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+      "OpenCV",
+      "Boto3"
+    ],
+    "description": "Torre especializada en inteligencia artificial, machine learning, NLP, visión por computador y automatización con IA"
+  },
+  {
+    "id": "2",
+    "team_name": "DATA",
+    "tower": "Torre DATA",
+    "skills": [
+      "Modelado de datos",
+      "Integración y transformación",
+      "ETL/ELT",
+      "Análisis exploratorio",
+      "Visualización",
+      "Calidad de datos",
+      "Gobierno y catalogación"
+    ],
+    "team_lead": "Daniel S. Zambrano",
+    "team_lead_email": "danielzambrano@cbit-online.com",
+    "expertise_areas": [
+      "Data Engineering",
+      "Data Analytics",
+      "Business Intelligence",
+      "Data Governance",
+      "ETL",
+      "Data Warehousing"
+    ],
+    "technologies": [
+      "Data Lake",
+      "Data Warehouse",
+      "Big Data",
+      "ETL",
+      "Pipelines de datos",
+      "Bases relacionales",
+      "Bases no relacionales",
+      "Azure Synapse",
+      "Azure Data Factory",
+      "Power BI",
+      "SQL Server",
+      "PostgreSQL",
+      "Databricks",
+      "Snowflake",
+      "AWS Glue"
+    ],
+    "frameworks": [
+      "Spark",
+      "Pandas",
+      "NumPy",
+      "Airflow",
+      "dbt",
+      "PySpark"
+    ],
+    "description": "Torre de datos especializada en ingeniería de datos, ETL, análisis, visualización y gobierno de datos"
+  },
+  {
+    "id": "3",
+    "team_name": "CIBERSEGURIDAD",
+    "tower": "Torre CIBERSEGURIDAD",
+    "skills": [
+      "Seguridad de redes",
+      "Gestión de vulnerabilidades",
+      "Análisis de incidentes",
+      "Monitoreo de amenazas",
+      "Cumplimiento normativo",
+      "Protección de datos"
+    ],
+    "team_lead": "Daniel A. García",
+    "team_lead_email": "Danielgarcia@periferia-it.com",
+    "expertise_areas": [
+      "Cybersecurity",
+      "Security Operations",
+      "Incident Response",
+      "Compliance",
+      "Threat Intelligence",
+      "Network Security"
+    ],
+    "technologies": [
+      "SIEM",
+      "SOC",
+      "IDS/IPS",
+      "Criptografía",
+      "Gestión de identidades",
+      "Control de accesos",
+      "Hardening de sistemas",
+      "Microsoft Defender",
+      "Azure Sentinel",
+      "AWS GuardDuty",
+      "Qualys",
+      "Nessus",
+      "Wireshark",
+      "Metasploit",
+      "Splunk"
+    ],
+    "frameworks": [
+      "MITRE ATT&CK",
+      "NIST",
+      "ISO 27001",
+      "OWASP",
+      "CIS Controls"
+    ],
+    "description": "Torre de ciberseguridad enfocada en protección, monitoreo, análisis de amenazas y cumplimiento normativo"
+  },
+  {
+    "id": "4",
+    "team_name": "RPA",
+    "tower": "Torre RPA",
+    "skills": [
+      "Diseño de flujos automatizados",
+      "Integración con APIs y sistemas legados",
+      "Manejo de colas y orquestadores",
+      "Análisis de procesos",
+      "Documentación y mantenimiento de bots"
+    ],
+    "team_lead": "Cristian A. Betancourth",
+    "team_lead_email": "cristianbetancourth@periferia-it.com",
+    "expertise_areas": [
+      "Robotic Process Automation",
+      "Process Mining",
+      "Workflow Automation",
+      "Integration",
+      "Bot Development"
+    ],
+    "technologies": [
+      "RPA",
+      "OCR",
+      "API REST",
+      "JSON",
+      "XML",
+      "Integración con ERP y CRM",
+      "Workflows",
+      "Control de versiones",
+      "Power Automate",
+      "UiPath",
+      "Automation Anywhere",
+      "Blue Prism",
+      "WinAutomation",
+      "Selenium",
+      "ServiceNow"
+    ],
+    "frameworks": [
+      "UiPath Framework RE",
+      "Power Platform",
+      "Python Automation",
+      ".NET Automation",
+      "Selenium Framework"
+    ],
+    "description": "Torre de automatización robótica de procesos, integración de sistemas y optimización de workflows"
+  },
+  {
+    "id": "5",
+    "team_name": "FULLSTACK",
+    "tower": "Torre FULLSTACK",
+    "skills": [
+      "Desarrollo frontend y backend",
+      "Consumo de APIs",
+      "Integración de microservicios",
+      "Control de versiones",
+      "Despliegue en la nube",
+      "Pruebas unitarias y automatizadas"
+    ],
+    "team_lead": "Manuel F. Galindo",
+    "team_lead_email": "manuelgalindo@periferia-it.com",
+    "expertise_areas": [
+      "Full Stack Development",
+      "Frontend Development",
+      "Backend Development",
+      "API Development",
+      "Microservices",
+      "DevOps"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "REST",
+      "GraphQL",
+      ".NET",
+      "Java",
+      "Python",
+      "CI/CD",
+      "Visual Studio Code",
+      "GitHub",
+      "Postman",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "Azure DevOps",
+      "AWS Elastic Beanstalk"
+    ],
+    "frameworks": [
+      "Angular",
+      "React",
+      "Vue.js",
+      "Express.js",
+      "Spring Boot",
+      "Django",
+      "Flask"
+    ],
+    "description": "Torre de desarrollo full stack, frontend, backend, APIs, microservicios y despliegue en cloud"
+  },
+  {
+    "id": "6",
+    "team_name": "QA",
+    "tower": "Torre Quality Assurance",
+    "skills": [
+      "Testing manual y automatizado",
+      "Pruebas de rendimiento",
+      "Pruebas de seguridad",
+      "Test planning",
+      "Calidad de software"
+    ],
+    "team_lead": "Alejandro Ortiz",
+    "team_lead_email": "alejandroortiz@cbit-online.com",
+    "expertise_areas": [
+      "Quality Assurance",
+      "Test Automation",
+      "Performance Testing",
+      "Security Testing"
+    ],
+    "technologies": [
+      "Selenium",
+      "Cypress",
+      "JMeter",
+      "Postman",
+      "Azure DevOps",
+      "TestRail"
+    ],
+    "frameworks": [],
+    "description": "Equipo obligatorio de aseguramiento de calidad y testing"
+  },
+  {
+    "id": "7",
+    "team_name": "PMO",
+    "tower": "Torre PMO",
+    "skills": [
+      "Gestión de proyectos",
+      "Metodologías ágiles",
+      "Coordinación de equipos",
+      "Planificación",
+      "Gestión de stakeholders"
+    ],
+    "team_lead": "Angie E. Olarte",
+    "team_lead_email": "angieolarte@cbit-online.com",
+    "expertise_areas": [
+      "Project Management",
+      "Agile",
+      "Scrum",
+      "Coordination"
+    ],
+    "technologies": [
+      "Azure DevOps",
+      "Jira",
+      "MS Project",
+      "Confluence"
+    ],
+    "frameworks": [],
+    "description": "Equipo obligatorio de gestión de proyectos y coordinación"
+  },
+  {
+    "id": "8",
+    "team_name": "MOBILE",
+    "tower": "Torre MOBILE",
+    "skills": [
+      "Desarrollo de aplicaciones móviles",
+      "Desarrollo nativo iOS y Android",
+      "Desarrollo híbrido y multiplataforma",
+      "Diseño de UX/UI móvil",
+      "Publicación en App Stores",
+      "Integración con APIs y servicios backend"
+    ],
+    "team_lead": "Jorge Vidal",
+    "team_lead_email": "correo@prueba.com",
+    "expertise_areas": [
+      "Mobile Development",
+      "iOS Development",
+      "Android Development",
+      "Cross-platform Development",
+      "Mobile UX/UI"
+    ],
+    "technologies": [
+      "Swift",
+      "Kotlin",
+      "Java",
+      "Objective-C",
+      "Flutter",
+      "React Native",
+      "Xamarin",
+      "Ionic",
+      "Android Studio",
+      "Xcode",
+      "Firebase",
+      "App Store Connect",
+      "Google Play Console"
+    ],
+    "frameworks": [
+      "Flutter",
+      "React Native",
+      "SwiftUI",
+      "Jetpack Compose",
+      "Xamarin.Forms"
+    ],
+    "description": "Torre de desarrollo móvil, aplicaciones nativas, híbridas y multiplataforma para iOS y Android"
+  },
+  {
+    "id": "9",
+    "team_name": "SAP",
+    "tower": "Torre SAP",
+    "skills": [
+      "Implementación de módulos SAP",
+      "Configuración y customización SAP",
+      "Desarrollo ABAP",
+      "Integraciones SAP",
+      "Migración de datos SAP",
+      "Soporte funcional SAP"
+    ],
+    "team_lead": "Luis Minaya Obregon",
+    "team_lead_email": "correo@prueba.com",
+    "expertise_areas": [
+      "SAP ERP",
+      "SAP S/4HANA",
+      "SAP BW",
+      "SAP Fiori",
+      "SAP Integration",
+      "ABAP Development"
+    ],
+    "technologies": [
+      "SAP ECC",
+      "SAP S/4HANA",
+      "SAP BW/4HANA",
+      "SAP Fiori",
+      "SAP PI/PO",
+      "SAP CPI",
+      "ABAP",
+      "SAP HANA",
+      "SAP SuccessFactors",
+      "SAP Ariba",
+      "SAP MM",
+      "SAP SD",
+      "SAP FI/CO",
+      "SAP HR"
+    ],
+    "frameworks": [
+      "ABAP OO",
+      "SAP Fiori Elements",
+      "SAP UI5",
+      "SAP CAP"
+    ],
+    "description": "Torre especializada en implementación, desarrollo y soporte de soluciones SAP"
+  },
+  {
+    "id": "10",
+    "team_name": "INTEGRACION",
+    "tower": "Torre INTEGRACION",
+    "skills": [
+      "Diseño de arquitecturas de integración",
+      "Desarrollo de APIs",
+      "Integración de sistemas empresariales",
+      "Middleware y ESB",
+      "Gestión de mensajería",
+      "Orquestación de servicios"
+    ],
+    "team_lead": "Luis E. Ospina Usaquen",
+    "team_lead_email": "correo@prueba.com",
+    "expertise_areas": [
+      "Enterprise Integration",
+      "API Management",
+      "ESB",
+      "Middleware",
+      "SOA",
+      "Microservices Integration"
+    ],
+    "technologies": [
+      "MuleSoft",
+      "Dell Boomi",
+      "Azure Integration Services",
+      "AWS API Gateway",
+      "Apache Kafka",
+      "RabbitMQ",
+      "Azure Service Bus",
+      "IBM MQ",
+      "TIBCO",
+      "REST APIs",
+      "SOAP",
+      "GraphQL",
+      "OpenAPI",
+      "Swagger"
+    ],
+    "frameworks": [
+      "Apache Camel",
+      "Spring Integration",
+      "WSO2",
+      "Kong"
+    ],
+    "description": "Torre de integración de sistemas, APIs, middleware y orquestación de servicios empresariales"
+  },
+  {
+    "id": "11",
+    "team_name": "PORTALES",
+    "tower": "Torre PORTALES",
+    "skills": [
+      "Desarrollo de portales web",
+      "Gestión de contenidos",
+      "Desarrollo CMS",
+      "Portales corporativos",
+      "Intranets y extranets",
+      "Experiencia de usuario web"
+    ],
+    "team_lead": "John E. Goyeneche Barbosa",
+    "team_lead_email": "correo@prueba.com",
+    "expertise_areas": [
+      "Portal Development",
+      "CMS",
+      "Web Development",
+      "Content Management",
+      "Digital Experience"
+    ],
+    "technologies": [
+      "SharePoint",
+      "Liferay",
+      "WordPress",
+      "Drupal",
+      "Adobe Experience Manager",
+      "Sitecore",
+      "Power Pages",
+      "Kentico",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Microsoft 365"
+    ],
+    "frameworks": [
+      "SPFx",
+      "React",
+      "Angular",
+      "Vue.js",
+      "Bootstrap"
+    ],
+    "description": "Torre de desarrollo de portales web, CMS, intranets y experiencias digitales corporativas"
+  },
+  {
+    "id": "12",
+    "team_name": "SOPORTE Y MANTENIMIENTO",
+    "tower": "Torre SOPORTE Y MANTENIMIENTO",
+    "skills": [
+      "Soporte técnico nivel 1, 2 y 3",
+      "Mantenimiento de aplicaciones",
+      "Gestión de incidentes",
+      "Resolución de problemas",
+      "Monitoreo de sistemas",
+      "Documentación técnica"
+    ],
+    "team_lead": "Victor A. Romero Alvarez",
+    "team_lead_email": "correo@prueba.com",
+    "expertise_areas": [
+      "IT Support",
+      "Application Maintenance",
+      "Incident Management",
+      "Problem Management",
+      "Service Desk"
+    ],
+    "technologies": [
+      "ServiceNow",
+      "Jira Service Management",
+      "Freshdesk",
+      "Zendesk",
+      "Azure Monitor",
+      "Nagios",
+      "Zabbix",
+      "Grafana",
+      "Splunk",
+      "PagerDuty"
+    ],
+    "frameworks": [
+      "ITIL",
+      "COBIT",
+      "ISO 20000"
+    ],
+    "description": "Torre de soporte técnico, mantenimiento de aplicaciones y gestión de incidentes"
+  },
+  {
+    "id": "13",
+    "team_name": "DEVOPS",
+    "tower": "Torre DEVOPS",
+    "skills": [
+      "Automatización de CI/CD",
+      "Infraestructura como código",
+      "Containerización",
+      "Orquestación de contenedores",
+      "Monitoreo y observabilidad",
+      "Gestión de configuración"
+    ],
+    "team_lead": "Juan C. Aguilar Muñoz",
+    "team_lead_email": "correo@prueba.com",
+    "expertise_areas": [
+      "DevOps",
+      "CI/CD",
+      "Cloud Infrastructure",
+      "Container Orchestration",
+      "Site Reliability Engineering"
+    ],
+    "technologies": [
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Ansible",
+      "Jenkins",
+      "GitHub Actions",
+      "Azure DevOps",
+      "GitLab CI",
+      "AWS CodePipeline",
+      "Helm",
+      "ArgoCD",
+      "Prometheus",
+      "Grafana",
+      "ELK Stack"
+    ],
+    "frameworks": [
+      "GitOps",
+      "Infrastructure as Code",
+      "12-Factor App",
+      "SRE Practices"
+    ],
+    "description": "Torre de DevOps, automatización CI/CD, infraestructura como código y prácticas SRE"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "tower": "IA",
+    "integration_type": "Agente",
+    "size": "Small",
+    "description": "Small",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 6.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 4.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 2.0
+      }
+    ],
+    "total_hours": 12.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "Agente",
+    "size": "Medium",
+    "description": "Medium",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 7.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 5.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 2.0
+      }
+    ],
+    "total_hours": 14.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "Agente",
+    "size": "Large",
+    "description": "Large",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 10.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 6.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 22.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "Agente",
+    "size": "X-Large",
+    "description": "X-Large",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 16.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 12.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 36.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "Chatbot",
+    "size": "Small",
+    "description": "Responder preguntas frecuentes (FAQ) con plantillas y razonamiento sobre contrapreguntas.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 8.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 4.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 16.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "Chatbot",
+    "size": "Medium",
+    "description": "Responder preguntas frecuentes (FAQ) con conexión a APIs o bases de datos.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 10.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 5.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 19.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "Chatbot",
+    "size": "Large",
+    "description": "Responder preguntas frecuentes (FAQ) con conexión a APIs y análisis contextual de respuestas.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 14.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 7.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 25.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "Chatbot",
+    "size": "X-Large",
+    "description": "Chatbot avanzado con contexto conversacional persistente y personalización dinámica.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 16.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 9.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 29.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "RAG",
+    "size": "Small",
+    "description": "Implementación básica de RAG para lectura de documentos simples.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 8.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 8.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 19.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "RAG",
+    "size": "Medium",
+    "description": "RAG con indexación de múltiples fuentes y búsqueda contextual.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 12.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 12.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 5.0
+      }
+    ],
+    "total_hours": 29.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "RAG",
+    "size": "Large",
+    "description": "RAG con embeddings personalizados y control de versiones de conocimiento.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 14.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 14.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 7.0
+      }
+    ],
+    "total_hours": 35.0
+  },
+  {
+    "tower": "IA",
+    "integration_type": "RAG",
+    "size": "X-Large",
+    "description": "RAG avanzado con actualización automática de índices y razonamiento cruzado.",
+    "criteria": [
+      {
+        "name": "Diseño",
+        "hours": 17.0
+      },
+      {
+        "name": "Funcionalidades",
+        "hours": 17.0
+      },
+      {
+        "name": "Consumo de Servicio",
+        "hours": 9.0
+      }
+    ],
+    "total_hours": 43.0
+  }
+]

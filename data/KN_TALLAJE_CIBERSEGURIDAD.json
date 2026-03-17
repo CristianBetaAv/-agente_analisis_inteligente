@@ -1,0 +1,254 @@
+[
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad básica",
+    "size": "Small",
+    "description": "Small",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 2.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 3.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 2.0
+      }
+    ],
+    "total_hours": 7.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad básica",
+    "size": "Medium",
+    "description": "Medium",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 3.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 4.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 10.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad básica",
+    "size": "Large",
+    "description": "Large",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 5.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 6.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 5.0
+      }
+    ],
+    "total_hours": 16.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad básica",
+    "size": "X-Large",
+    "description": "X-Large",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 7.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 8.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 7.0
+      }
+    ],
+    "total_hours": 22.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad con automatización integrada",
+    "size": "Small",
+    "description": "Automatización de alertas básicas en SIEM (por ejemplo, Microsoft Sentinel).",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 3.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 4.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 10.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad con automatización integrada",
+    "size": "Medium",
+    "description": "Integración de SIEM con controladores de red y detección de amenazas automatizada.",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 5.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 6.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 15.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad con automatización integrada",
+    "size": "Large",
+    "description": "Orquestación de flujos de respuesta ante incidentes (SOAR).",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 7.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 8.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 21.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad con automatización integrada",
+    "size": "X-Large",
+    "description": "Implementación completa de seguridad automatizada con detección y remediación inteligente.",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 9.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 10.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 27.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad avanzada",
+    "size": "Small",
+    "description": "Configuración de entornos críticos con políticas reforzadas de acceso y control.",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 4.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 6.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 14.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad avanzada",
+    "size": "Medium",
+    "description": "Integración avanzada de detección de amenazas con SIEM/SOAR y respuesta automatizada.",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 6.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 8.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 20.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad avanzada",
+    "size": "Large",
+    "description": "Auditoría de seguridad continua, pentesting y cumplimiento normativo automatizado.",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 8.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 12.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 28.0
+  },
+  {
+    "tower": "CIBERSEGURIDAD",
+    "integration_type": "Seguridad avanzada",
+    "size": "X-Large",
+    "description": "Infraestructura de seguridad completa con detección proactiva y análisis forense.",
+    "criteria": [
+      {
+        "name": "Implementación",
+        "hours": 12.0
+      },
+      {
+        "name": "Pruebas de vulnerabilidad y cumplimiento",
+        "hours": 16.0
+      },
+      {
+        "name": "Monitoreo y respuesta a incidentes",
+        "hours": 12.0
+      }
+    ],
+    "total_hours": 40.0
+  }
+]

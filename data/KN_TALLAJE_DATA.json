@@ -1,0 +1,254 @@
+[
+  {
+    "tower": "DATA",
+    "integration_type": "Integración de datos básica",
+    "size": "Small",
+    "description": "Small",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 2.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 3.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 2.0
+      }
+    ],
+    "total_hours": 7.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Integración de datos básica",
+    "size": "Medium",
+    "description": "Medium",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 3.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 4.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 10.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Integración de datos básica",
+    "size": "Large",
+    "description": "Large",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 5.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 6.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 5.0
+      }
+    ],
+    "total_hours": 16.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Integración de datos básica",
+    "size": "X-Large",
+    "description": "X-Large",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 7.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 8.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 7.0
+      }
+    ],
+    "total_hours": 22.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Integración con automatización",
+    "size": "Small",
+    "description": "Integración de datos automatizada con procesos ETL básicos.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 3.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 4.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 10.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Integración con automatización",
+    "size": "Medium",
+    "description": "Automatización de pipelines de datos e integración con bases relacionales.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 5.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 6.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 15.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Integración con automatización",
+    "size": "Large",
+    "description": "Automatización avanzada con validaciones y control de errores.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 7.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 8.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 21.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Integración con automatización",
+    "size": "X-Large",
+    "description": "Orquestación de pipelines complejos con monitoreo automático y alertas.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 9.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 10.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 27.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Modelado y analítica avanzada",
+    "size": "Small",
+    "description": "Creación de modelos analíticos descriptivos con Power BI o Tableau.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 4.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 6.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 14.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Modelado y analítica avanzada",
+    "size": "Medium",
+    "description": "Modelos de predicción de tendencia con datos históricos.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 6.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 8.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 20.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Modelado y analítica avanzada",
+    "size": "Large",
+    "description": "Análisis avanzado de correlaciones y segmentación de datos.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 8.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 12.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 28.0
+  },
+  {
+    "tower": "DATA",
+    "integration_type": "Modelado y analítica avanzada",
+    "size": "X-Large",
+    "description": "Modelos predictivos automatizados y dashboards dinámicos con ML ligero.",
+    "criteria": [
+      {
+        "name": "Extracción y limpieza de datos",
+        "hours": 12.0
+      },
+      {
+        "name": "Transformación y modelado",
+        "hours": 16.0
+      },
+      {
+        "name": "Visualización y validación",
+        "hours": 12.0
+      }
+    ],
+    "total_hours": 40.0
+  }
+]

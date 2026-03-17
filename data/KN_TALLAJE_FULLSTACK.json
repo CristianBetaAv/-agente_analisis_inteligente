@@ -1,0 +1,254 @@
+[
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack básico",
+    "size": "Small",
+    "description": "Small",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 3.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 5.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 2.0
+      }
+    ],
+    "total_hours": 10.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack básico",
+    "size": "Medium",
+    "description": "Medium",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 5.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 7.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 15.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack básico",
+    "size": "Large",
+    "description": "Large",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 7.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 10.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 5.0
+      }
+    ],
+    "total_hours": 22.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack básico",
+    "size": "X-Large",
+    "description": "X-Large",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 9.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 14.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 7.0
+      }
+    ],
+    "total_hours": 30.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack con automatización integrada",
+    "size": "Small",
+    "description": "Módulo con conexión a servicios internos.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 4.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 6.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 3.0
+      }
+    ],
+    "total_hours": 13.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack con automatización integrada",
+    "size": "Medium",
+    "description": "Aplicación modular con automatización de pruebas básicas.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 6.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 9.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 5.0
+      }
+    ],
+    "total_hours": 20.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack con automatización integrada",
+    "size": "Large",
+    "description": "Aplicación integrada con orquestación parcial de servicios.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 8.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 12.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 7.0
+      }
+    ],
+    "total_hours": 27.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack con automatización integrada",
+    "size": "X-Large",
+    "description": "Aplicación fullstack automatizada con despliegues integrados.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 10.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 16.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 9.0
+      }
+    ],
+    "total_hours": 35.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack avanzado",
+    "size": "Small",
+    "description": "Desarrollo avanzado con microservicios y componentes distribuidos.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 5.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 8.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 4.0
+      }
+    ],
+    "total_hours": 17.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack avanzado",
+    "size": "Medium",
+    "description": "Aplicación con arquitectura escalable y seguridad avanzada.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 7.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 12.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 6.0
+      }
+    ],
+    "total_hours": 25.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack avanzado",
+    "size": "Large",
+    "description": "Aplicación con módulos desacoplados y monitoreo proactivo.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 10.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 16.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 8.0
+      }
+    ],
+    "total_hours": 34.0
+  },
+  {
+    "tower": "FULLSTACK",
+    "integration_type": "Fullstack avanzado",
+    "size": "X-Large",
+    "description": "Plataforma completa con integración CI/CD y monitoreo continuo.",
+    "criteria": [
+      {
+        "name": "Diseño y desarrollo de componentes",
+        "hours": 14.0
+      },
+      {
+        "name": "Integración funcional",
+        "hours": 20.0
+      },
+      {
+        "name": "Pruebas unitarias y validación",
+        "hours": 12.0
+      }
+    ],
+    "total_hours": 46.0
+  }
+]
