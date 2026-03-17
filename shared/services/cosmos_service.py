@@ -2,6 +2,7 @@
 Servicio para interactuar con Azure Cosmos DB
 Adaptado para oportunidades de Dynamics 365
 """
+from __future__ import annotations
 import os
 import logging
 import uuid
