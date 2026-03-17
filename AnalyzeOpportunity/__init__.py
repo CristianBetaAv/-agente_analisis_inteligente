@@ -326,6 +326,27 @@ async def main(req: func.HttpRequest) -> func.HttpResponse:
             charset="utf-8"
         )
         
+    except ImportError as e:
+        logging.error(f"❌ ERROR CRÍTICO (dependencia faltante): {str(e)}")
+        import traceback
+        logging.error(f"❌ TRACEBACK: {traceback.format_exc()}")
+        
+        return func.HttpResponse(
+            json.dumps({
+                "success": False,
+                "error": {
+                    "code": "MISSING_DEPENDENCY",
+                    "message": str(e),
+                    "type": type(e).__name__
+                },
+                "metadata": {
+                    "processed_at": datetime.utcnow().isoformat()
+                }
+            }),
+            status_code=500,
+            mimetype="application/json",
+            charset="utf-8"
+        )
     except Exception as e:
         logging.error(f"❌ ERROR CRÍTICO: {str(e)}")
         import traceback

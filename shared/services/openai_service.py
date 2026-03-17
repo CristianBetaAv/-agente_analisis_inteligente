@@ -9,7 +9,6 @@ import logging
 import json
 import re
 from typing import List, Dict, Any, Optional
-from openai import AzureOpenAI
 
 
 class OpenAIService:
@@ -23,6 +22,13 @@ class OpenAIService:
         
         if not self.endpoint or not self.key:
             raise ValueError("AZURE_OPENAI_ENDPOINT y AZURE_OPENAI_KEY/AZURE_OPENAI_API_KEY son requeridos")
+
+        try:
+            # Import dinámico para evitar errores de carga si la librería no está instalada
+            from openai import AzureOpenAI
+        except ImportError as ie:
+            logging.error(f"❌ No se encontró la librería openai: {ie}")
+            raise
         
         # Cliente de Azure OpenAI
         self.client = AzureOpenAI(
