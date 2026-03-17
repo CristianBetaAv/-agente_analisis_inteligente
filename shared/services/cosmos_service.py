@@ -7,9 +7,6 @@ import logging
 import uuid
 from datetime import datetime
 from typing import Optional, List, Dict, Any
-from azure.cosmos import CosmosClient, PartitionKey, exceptions
-from azure.cosmos.database import DatabaseProxy
-from azure.cosmos.container import ContainerProxy
 
 
 class CosmosDBService:
@@ -42,6 +39,11 @@ class CosmosDBService:
             logging.info(f"   Database: {self.database_name}")
             logging.info(f"   Container: {self.container_name}")
             
+            # Import dinámico para evitar errores de carga si la librería no está instalada
+            from azure.cosmos import CosmosClient, PartitionKey, exceptions
+            from azure.cosmos.database import DatabaseProxy
+            from azure.cosmos.container import ContainerProxy
+            
             # Inicializar cliente con endpoint y key
             self.client = CosmosClient(url=self.endpoint, credential=self.key)
             
@@ -51,8 +53,8 @@ class CosmosDBService:
             
             logging.info(f"✅ CosmosDBService inicializado")
             
-        except Exception as e:
-            logging.error(f"❌ Error inicializando CosmosDBService: {str(e)}")
+        except ImportError as ie:
+            logging.error(f"❌ No se encontró la librería azure-cosmos: {ie}")
             raise
     
     @property

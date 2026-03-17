@@ -41,14 +41,23 @@ class OpportunityOrchestrator:
             from ..services.blob_storage_service import BlobStorageService
             from ..services.cosmos_service import CosmosDBService
             
+            # OpenAI es requerido
             self.openai_service = OpenAIService()
+            
+            # Search es requerido
             self.search_service = SearchService()
+            
+            # Blob Storage es requerido
             self.blob_service = BlobStorageService()
             
             # Cosmos DB es opcional
             try:
                 self.cosmos_service = CosmosDBService()
                 self.cosmos_enabled = True
+            except ImportError as ie:
+                logging.warning(f"⚠️ Cosmos DB no disponible (librería faltante): {str(ie)}")
+                self.cosmos_service = None
+                self.cosmos_enabled = False
             except Exception as e:
                 logging.warning(f"⚠️ Cosmos DB no configurado: {str(e)}")
                 self.cosmos_service = None
@@ -56,7 +65,7 @@ class OpportunityOrchestrator:
             
             logging.info("✅ OpportunityOrchestrator inicializado")
         except ImportError as ie:
-            logging.error(f"❌ Error importando servicios: {str(ie)}")
+            logging.error(f"❌ Error importando servicios requeridos: {str(ie)}")
             raise
     
     async def process_opportunity(self, payload: Dict[str, Any]) -> Dict[str, Any]:

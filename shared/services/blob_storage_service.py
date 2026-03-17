@@ -6,7 +6,6 @@ Almacenamiento de PDFs y documentos generados
 import os
 import logging
 from typing import Optional
-from azure.storage.blob import BlobServiceClient, ContentSettings
 from datetime import datetime, timedelta
 
 
@@ -19,6 +18,13 @@ class BlobStorageService:
         
         if not self.connection_string:
             raise ValueError("AZURE_STORAGE_CONNECTION_STRING es requerido")
+        
+        try:
+            # Import dinámico para evitar errores de carga si la librería no está instalada
+            from azure.storage.blob import BlobServiceClient, ContentSettings
+        except ImportError as ie:
+            logging.error(f"❌ No se encontró la librería azure-storage-blob: {ie}")
+            raise
         
         self.blob_service_client = BlobServiceClient.from_connection_string(
             self.connection_string

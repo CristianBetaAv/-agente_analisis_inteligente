@@ -6,8 +6,6 @@ Búsqueda de equipos y conocimiento organizacional
 import os
 import logging
 from typing import List, Dict, Any
-from azure.search.documents import SearchClient
-from azure.core.credentials import AzureKeyCredential
 
 
 class SearchService:
@@ -20,6 +18,14 @@ class SearchService:
         
         if not self.endpoint or not self.key:
             raise ValueError("AZURE_SEARCH_ENDPOINT y AZURE_SEARCH_KEY son requeridos")
+        
+        try:
+            # Import dinámico para evitar errores de carga si la librería no está instalada
+            from azure.search.documents import SearchClient
+            from azure.core.credentials import AzureKeyCredential
+        except ImportError as ie:
+            logging.error(f"❌ No se encontró la librería azure-search-documents: {ie}")
+            raise
         
         self.client = SearchClient(
             endpoint=self.endpoint,

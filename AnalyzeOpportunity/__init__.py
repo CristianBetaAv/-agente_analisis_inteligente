@@ -216,7 +216,50 @@ async def main(req: func.HttpRequest) -> func.HttpResponse:
         
         # Crear orquestador temprano para acceder a servicios
         logging.info("⚙️ Inicializando orquestador...")
-        orchestrator = OpportunityOrchestrator()
+        try:
+            orchestrator = OpportunityOrchestrator()
+        except ImportError as ie:
+            logging.error(f"❌ ERROR CRÍTICO (dependencia faltante): {str(ie)}")
+            import traceback
+            logging.error(f"❌ TRACEBACK: {traceback.format_exc()}")
+            
+            return func.HttpResponse(
+                json.dumps({
+                    "success": False,
+                    "error": {
+                        "code": "MISSING_DEPENDENCY",
+                        "message": str(ie),
+                        "type": type(ie).__name__
+                    },
+                    "metadata": {
+                        "processed_at": datetime.utcnow().isoformat()
+                    }
+                }),
+                status_code=500,
+                mimetype="application/json",
+                charset="utf-8"
+            )
+        except Exception as e:
+            logging.error(f"❌ ERROR CRÍTICO (orquestador): {str(e)}")
+            import traceback
+            logging.error(f"❌ TRACEBACK: {traceback.format_exc()}")
+            
+            return func.HttpResponse(
+                json.dumps({
+                    "success": False,
+                    "error": {
+                        "code": "ORCHESTRATOR_ERROR",
+                        "message": str(e),
+                        "type": type(e).__name__
+                    },
+                    "metadata": {
+                        "processed_at": datetime.utcnow().isoformat()
+                    }
+                }),
+                status_code=500,
+                mimetype="application/json",
+                charset="utf-8"
+            )
         
         # Verificar si es una actualización con documento
         document_base64 = payload.get("document_base64")
